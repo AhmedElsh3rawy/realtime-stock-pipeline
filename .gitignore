@@ -10,3 +10,4 @@ kafka-data/
 
 # Virtual environments
 .venv
+.env
