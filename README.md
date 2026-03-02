@@ -1,10 +1,10 @@
 # Realtime Stock Pipeline
 
-![Pipeline Diagram](assets/pipeline.png)
-
 A real-time stock price streaming pipeline that fetches market data from Finnhub, streams it through Apache Kafka, and persists it to PostgreSQL.
 
 ## Architecture
+
+![Pipeline Diagram](assets/pipeline.png)
 
 - **Producer**: Fetches stock quotes every 10 seconds from Finnhub API and publishes to Kafka
 - **Consumer**: Consumes messages from Kafka and ingests them into PostgreSQL
