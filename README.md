@@ -94,7 +94,7 @@ Environment variables can be set in `.env`:
 The pipeline is configured to track these symbols:
 
 - AAPL (Apple)
-- GOOGL (Alphabet)
+- GOOGL (Google)
 - MSFT (Microsoft)
 - AMZN (Amazon)
 - TSLA (Tesla)
