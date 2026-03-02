@@ -1,0 +1,45 @@
+{
+  "type": "record",
+  "name": "StockQuote",
+  "namespace": "io.finnhub",
+  "fields": [
+    {
+      "name": "symbol",
+      "type": "string"
+    },
+    {
+      "name": "current_price",
+      "type": "double"
+    },
+    {
+      "name": "high_price",
+      "type": "double"
+    },
+    {
+      "name": "low_price",
+      "type": "double"
+    },
+    {
+      "name": "open_price",
+      "type": "double"
+    },
+    {
+      "name": "previous_close",
+      "type": "double"
+    },
+    {
+      "name": "market_time",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    },
+    {
+      "name": "fetch_time",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}
