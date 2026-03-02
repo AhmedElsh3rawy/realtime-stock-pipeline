@@ -40,7 +40,7 @@ def fetch_stock_quote(symbol):
 
 
 producer_conf = {
-    "bootstrap.servers": "localhost:9092",
+    "bootstrap.servers": "kafka:29092",
 }
 
 producer = Producer(dict(producer_conf))
@@ -70,7 +70,7 @@ with open("quote.avsc", "r") as f:
     schema_str = f.read()
 
 
-schema_registry_conf = {"url": "http://localhost:8081"}
+schema_registry_conf = {"url": "http://schema-registry:8081"}
 
 schema_registry_client = SchemaRegistryClient(schema_registry_conf)
 
