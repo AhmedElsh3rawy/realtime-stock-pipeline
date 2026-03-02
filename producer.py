@@ -70,7 +70,7 @@ with open("quote.avsc", "r") as f:
     schema_str = f.read()
 
 
-schema_registry_conf = {"url": "http://schema-registry:8081"}
+schema_registry_conf = {"url": "http://schema-registry-stock:8081"}
 
 schema_registry_client = SchemaRegistryClient(schema_registry_conf)
 
@@ -81,6 +81,8 @@ avro_serializer = AvroSerializer(
 )
 
 string_serializer = StringSerializer("utf-8")
+
+print(f"🚀 Starting producer. Sending quotes to topic: {TOPIC}")
 
 try:
     while True:
@@ -101,5 +103,3 @@ try:
         time.sleep(10)
 except KeyboardInterrupt:
     print("\n🔴 Stopping Producer.")
-finally:
-    producer.close()
