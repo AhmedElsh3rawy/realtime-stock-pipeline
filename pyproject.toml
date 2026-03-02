@@ -9,4 +9,5 @@ dependencies = [
     "fastavro>=1.12.1",
     "psycopg2-binary>=2.9.11",
     "python-dotenv>=1.2.2",
+    "requests>=2.32.5",
 ]
