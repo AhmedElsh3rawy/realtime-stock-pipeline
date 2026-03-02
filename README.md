@@ -6,12 +6,6 @@ A real-time stock price streaming pipeline that fetches market data from Finnhub
 
 ## Architecture
 
-```
-[Finnhub API] → [Producer] → [Kafka + Schema Registry] → [Consumer] → [PostgreSQL]
-                                                                    ↓
-                                                              [Grafana]
-```
-
 - **Producer**: Fetches stock quotes every 10 seconds from Finnhub API and publishes to Kafka
 - **Consumer**: Consumes messages from Kafka and ingests them into PostgreSQL
 - **Kafka**: Message broker for real-time streaming
