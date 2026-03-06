@@ -2,6 +2,9 @@
 
 A real-time stock price streaming pipeline that fetches market data from Finnhub, streams it through Apache Kafka, and persists it to PostgreSQL.
 
+> [!NOTE]
+> This project is for **learning purposes only**.
+
 ## Architecture
 
 ![Pipeline Diagram](assets/pipeline.png)
@@ -18,7 +21,7 @@ A real-time stock price streaming pipeline that fetches market data from Finnhub
 
 ```
 realtime-stock-pipeline/
-├── assets/                  # Static assets
+├── assets/                 # Static assets
 │   └── pipeline.png        # Architecture diagram
 ├── init-db/                # Database initialization
 │   └── init.sql            # SQL schema for stock_quotes table
